@@ -1,0 +1,12 @@
+p.color-black.lead {
+	color: black;
+}
+
+.panel {
+	background-color: #999999;
+	padding: 15px;
+}
+
+.img-responsive {
+	border-radius: 5px;
+}
