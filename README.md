@@ -35,8 +35,11 @@ That's it! Happy Blogging!
 
 # Technical Section
 The core idea of LazyBlogger revolves around the use of iFrame. As such, hrefs can be tricky.
-LazyBlogger automatically add onclick functions to normal <a href> links (excluding href="#" or href="javascript:"), but it will not override <a href> with onClick events.
+LazyBlogger automatically add onclick functions to normal \<a href\> links (excluding href="#" or href="javascript:"), but it will not override \<a href\> with onClick events.
 In such event, you will have to redirect the parent window manually.
-`window.top.location = $(this).attr('href')`
+
+```
+window.top.location = $(this).attr('href')
+```
 
 LazyBlogger is developed using jQuery v.2.1.4
