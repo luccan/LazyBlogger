@@ -1,5 +1,5 @@
 # LazyBlogger
-static javascript blog template
+Static javascript blog template
 
 When I want to create my own blog on github, I was very appalled to figure out that github only host static webpages - with the exception of jekyll.
 As a windows user, I am too lazy to install ruby, jekyll server and whatnot.
@@ -30,6 +30,8 @@ Include this code in all content .html files (careful on lazyblogger.js location
   <!-- your content here -->
 </div><script src="../js/lazyblogger.js"></script></body>
 ```
+Unfortunately, we can only debug this locally using Mozilla Firefox (due to ActiveX restriction).
+But once you push it to git, it will work cross browser.
 
 That's it! Happy Blogging!
 
