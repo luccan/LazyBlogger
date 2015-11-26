@@ -5,7 +5,7 @@
 */
 var url = window.location.href.split('/');
 var j = 0;
-var iframe_src = './_layout.html';
+var iframe_src = './layout.html';
 for (var i=0;i<url.length;i++){
 	if (j>0){ //append href
 		iframe_src = '../' + iframe_src + '/' + url[i]; //move up one level and append path to parameter
