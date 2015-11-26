@@ -3,6 +3,11 @@
 	Assumes there exist a _layout.html at the parent folder of the content/ directory.
 	This should only be called by items in the content/ directory.
 */
+//add meta to allow responsive design on phone
+document.getElementsByTagName('head')[0].innerHTML = '<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">' + 
+														'<meta charset="utf-8"><style type="text/css"></style>' +
+														'<meta http-equiv="X-UA-Compatible" content="IE=edge">';
+
 var url = window.location.href.split('/');
 var j = 0;
 var iframe_src = './layout.html';
@@ -21,9 +26,6 @@ document.body.style["overflow"] = "hidden";
 document.body.style["margin"] = "0";
 //console.log(iframe_src);
 document.body.innerHTML = '<iframe id="myIframe" src="'+iframe_src+'" style="height:100%; width:100%;"></iframe>';
-
-//add meta to allow responsive design on phone
-document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
 
 var myIframe = document.getElementById('myIframe');
 myIframe.onload = function() {
