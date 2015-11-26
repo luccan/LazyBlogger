@@ -21,3 +21,4 @@ document.body.style["overflow"] = "hidden";
 document.body.style["margin"] = "0";
 //console.log(iframe_src);
 document.body.innerHTML = '<iframe src="'+iframe_src+'" height="100%" width="100%"></iframe>'
+document.body.style["display"] = "block"; //show
