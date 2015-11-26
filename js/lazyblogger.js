@@ -20,7 +20,10 @@ for (var i=0;i<url.length;i++){
 document.body.style["overflow"] = "hidden";
 document.body.style["margin"] = "0";
 //console.log(iframe_src);
-document.body.innerHTML = '<iframe id="myIframe" src="'+iframe_src+'" height="100%" width="100%"></iframe>';
+document.body.innerHTML = '<iframe id="myIframe" src="'+iframe_src+'" style="height:100%; width:100%;"></iframe>';
+
+//add meta to allow responsive design on phone
+document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
 
 var myIframe = document.getElementById('myIframe');
 myIframe.onload = function() {
