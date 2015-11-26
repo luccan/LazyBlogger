@@ -1,13 +1,16 @@
 //assign onclick to all links with href (without overriding onclick)
-$('a').each(function(i, obj) {
-	if ($(obj).attr('href') !== undefined && $(obj).attr('onclick') === undefined){
-		if ($(obj).attr('href') != "#" && $(obj).attr('href') != "javascript:"){
-			$(obj).click( function(){ window.top.location = $(this).attr('href'); } );
-			//console.log(obj);
+function assignOnClick(){
+	$('a').each(function(i, obj) {
+		if ($(obj).attr('href') !== undefined && $(obj).attr('onclick') === undefined){
+			if ($(obj).attr('href') != "#" && $(obj).attr('href') != "javascript:"){
+				$(obj).click( function(){ window.top.location = $(this).attr('href'); } );
+				//console.log(obj);
+			}
 		}
-	}
-});
+	});
+}
 
+//load content
 function lazyblogger_init(content) {
 	//Read Query Param
 	var params = {};
@@ -25,5 +28,5 @@ function lazyblogger_init(content) {
 		//throw error
 		window.location.href = './error';
 	}
-	content.load(params.path + ' #content');
+	content.load(params.path + ' #content', function(){ assignOnClick(); });
 }
