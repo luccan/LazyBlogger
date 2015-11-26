@@ -135,9 +135,8 @@
 				}
 				if (typeof params.path === "undefined"){
 					//throw error
-					//window.location.href = './error';
+					window.location.href = './error';
 				}
-				console.log(params.path);
 				$("#content").load(params.path + ' #content');
 			});
 		</script>
