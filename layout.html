@@ -106,8 +106,15 @@
 		<!-- lazyBlogger -->
 		<script src="./js/lazyblogger_layout.js"></script>
 		<script>
+			//init lazyblogger
 			$( document ).ready(function(){
 				lazyblogger_init($("#content"));
+			});
+			
+			//Menu Toggle Script
+			$("#sidebar-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
 			});
 		</script>
 

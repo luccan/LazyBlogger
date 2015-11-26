@@ -8,12 +8,6 @@ $('a').each(function(i, obj) {
 	}
 });
 
-//Menu Toggle Script
-$("#sidebar-toggle").click(function(e) {
-	e.preventDefault();
-	$("#wrapper").toggleClass("toggled");
-});
-
 function lazyblogger_init(content) {
 	//Read Query Param
 	var params = {};
