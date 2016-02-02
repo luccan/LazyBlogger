@@ -9,8 +9,8 @@ Well, it was more complicated than expected, but here it is, a javascript render
 
 # Usage
 Requirements:
-- lazyblogger.js
-- lazyblogger_layout.js
+- js/lazyblogger.js
+- js/lazyblogger_layout.js
 - content/ directory in your root directory (containing any directory and .html)
 - layout.html
 
@@ -34,6 +34,10 @@ Unfortunately, we can only debug this locally using Mozilla Firefox (due to Acti
 But once you push it to git, it will work cross browser.
 
 That's it! Happy Blogging!
+
+# Tips
+You might want to consider adding an index.html under content/ folder that only contains a script to redirect to your default content.
+This is to prevent an error when user manually go to luccan.github.io/LazyBlogger/content
 
 # Technical Section
 The core idea of LazyBlogger revolves around the use of iFrame. As such, hrefs can be tricky.
