@@ -2,7 +2,7 @@
 function assignOnClick(){
 	$('a').each(function(i, obj) {
 		if ($(obj).attr('href') !== undefined && $(obj).attr('onclick') === undefined){
-			if ($(obj).attr('href') != "#" && $(obj).attr('href') != "javascript:"){
+			if ($(obj).attr('href') != "#" && $(obj).attr('href') != "javascript:" && $(obj).attr('target')==undefined){ //if links open in new window, ignore.
 				$(obj).click( function(){ window.top.location = $(this).attr('href'); } );
 				//console.log(obj);
 			}
