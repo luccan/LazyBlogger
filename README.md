@@ -37,7 +37,7 @@ That's it! Happy Blogging!
 
 # Tips
 You might want to consider adding an index.html under content/ folder that only contains a script to redirect to your default content.
-This is to prevent an error when user manually go to luccan.github.io/LazyBlogger/content
+This is to prevent an error when user manually go to http://luccan.github.io/LazyBlogger/content
 
 # Technical Section
 The core idea of LazyBlogger revolves around the use of iFrame. As such, hrefs can be tricky.
